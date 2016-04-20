@@ -11,7 +11,7 @@ int res = -1;
 		if( a[i] == num)
 		res = i;
 	}
-	
+
 	// returns only the first occurence of the number
 return res;
 
@@ -25,10 +25,13 @@ int main()
 	{
 		a[i] = rand()%20;
 	}
-	
-	int num  = 5 ; //Number we need to find ; 
+
+	int num ;
+	printf("Enter number that needs to be found:\n");
+	cin>>num;
+	 //Number we need to find ;
 	int ans = find_Num( a , num , n);
-	
+
 	printf("Input Array :- \n");
 	for(int i = 0 ; i < n ; i++ )
 	printf("%d ", a[i] );
@@ -38,9 +41,9 @@ int main()
 	if(ans == -1)
 	printf("Element not found\n");
 	else
-	printf("Element found at %d location ", ans );
+	printf("Element found at %d location \n", ans );
 
-	
+
 	return  0;
-	
+
 }

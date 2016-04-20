@@ -6,16 +6,16 @@ using namespace std;
 void swap(int *a,int *b)
 {
 	int temp;
-	
+
 	temp = *a;
 	*a = *b;
 	*b = temp;
 }
 
 int main()
-{ 
+{
 int n , a[MAXN] , temp , it ;
-
+printf("Enter the number and then the array\n");
 for( scanf("%d",&n) , it = 0 ; it < n; it++)
 scanf("%d", &a[it] );
 
@@ -27,13 +27,14 @@ for(int i = 0 ; i < n ; i++)
 		{
 			swap( &a[j-1] , &a[j]);
 		}
-		
+
 	}
 }
+printf("Sorted array is :\n");
 for(int i = 0 ; i < n; i++ )
 printf("%d ",a[i]);
-cout<<"\n"; 
-	
-	
+cout<<"\n";
+
+
 return 0;
 }
